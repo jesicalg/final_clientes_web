@@ -1,0 +1,1 @@
+export const notificationProvider = Symbol('notification');

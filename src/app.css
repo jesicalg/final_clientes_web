@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, #app {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.loader {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+}
+
+.loader:after {
+    content: " ";
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    margin: auto;
+    padding: 0;
+    border-radius: 50%;
+    border: .22em solid;
+    border-color: azure transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
